@@ -1,0 +1,18 @@
+Ownership:
+- An owner is a local variable that has exclusive ownership over a piece of memory.
+- When that local variable is passed to a function or assigned to another variable, then ownership
+  is "moved" to the new owner.
+- The original variable can no longer be used.
+- Owner is deallocated if ownership is not transferred once we exit
+  the local scope of said variable
+
+Variables:
+- Everything is immutable by default.
+- Have to opt in to mutability.
+
+Borrowing:
+- Uses references to prevent moving ownership. Original owner retains
+  ownership.
+- Two types of references a.k.a. "borrows":
+  - Immutable borrow
+  - Mutable borrow

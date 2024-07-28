@@ -1,0 +1,16 @@
+String
+- A vector of UTF-8 encoded bytes allocated on the HEAP.
+- Can be dynamically resized aka mutable
+
+String-literal
+- UTF-8 encoded bytes allocated directly within the compiled binary
+  image in static region of memory.
+- Totally immutable
+- Can only be used as a '&str'
+
+&str
+- A reference to UTF-8 encoded bytes
+- Bytes can be on the heap, on the stack, in static region of memory,
+  etc..
+
+
