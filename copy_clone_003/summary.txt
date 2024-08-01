@@ -1,0 +1,28 @@
+Copy:
+  - Copy is a TRAIT of certain objects that allows it to be passed to a
+    function or another variable, without transferring ownership/moving.
+  - A.k.a., objects that are Copy are automatically cloned, and at very
+    little cost.
+
+What types are Copy?
+- Generally stack-allocated objects
+- i.e. Objects whose size is known compile time
+- We call these objects "Sized" objects in Rust
+
+Clone:
+  - Clone is a TRAIT of certain objects that make it such that when it
+    is passed to another function or variable, it is moved, a.k.a. ownership
+    is transferred.
+  - To prevent moving, the object has to be explicitly cloned.
+
+What types are Clone?
+- Generally heap allocated objects
+  - a.k.a. dynamically sized objects
+- Objects that are not trivial in terms of performance to copy
+
+All types that are Copy are also Clone.
+All objects that are only Clone, are not Copy.
+
+Summary:
+- Clone is an explicit duplication
+- Copy is an implication duplication
