@@ -1,0 +1,11 @@
+Box:
+  - A wide pointer to some heap allocated object.
+  - Allows you to take a stack allocation and move it over to the heap.
+
+'dyn AnsiColor' -> A dynamic trait object that implements `AnsiColor`
+
+Type Erasure
+
+Run-time polymorphism vs. Compile-time polymorphism
+
+Generics go through compile-time monomorphism

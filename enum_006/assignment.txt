@@ -1,0 +1,19 @@
+Build the following program:
+
+```
+$ byte_count some_file.txt
+some_file.txt (1024 B)
+```
+
+```
+$ byte_count some_file.txt another_file.txt
+some_file.txt (1024 B)
+another_file.txt (2048 B)
+```
+
+fs: https://doc.rust-lang.org/std/fs/index.html
+io: https://doc.rust-lang.org/std/io/index.html
+env: https://doc.rust-lang.org/std/env/index.html
+
+// Accepting CLargs
+https://doc.rust-lang.org/book/ch12-01-accepting-command-line-arguments.html
